@@ -21,9 +21,9 @@ public class Test extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         // Set bounds (position and size) for text fields and button
-        tf1.setBounds(50, 50, 150, 20); // Set position (x, y) and size (width, height) for tf1
-        tf2.setBounds(50, 100, 150, 20); // Set position (x, y) and size (width, height) for tf2
-        btn.setBounds(50, 150, 80, 30); // Set position (x, y) and size (width, height) for btn
+        tf1.setBounds(50, 50, 150, 20); 
+        tf2.setBounds(50, 100, 150, 20);
+        btn.setBounds(50, 150, 80, 30);  
 
         // Make tf2 non-editable
         tf2.setEditable(false);
@@ -33,7 +33,7 @@ public class Test extends JFrame implements ActionListener {
         add(tf2);
         add(btn);
 
-        // Register action listener for the button
+        // Register action listener for the button ..ahile ehi class ko actionperformed function le handle garni vako vayera ..Test kai object pathako
         btn.addActionListener(this);
     }
 
@@ -43,11 +43,11 @@ public class Test extends JFrame implements ActionListener {
             try {
                 // Get input from tf1 and parse it to integer
                 int num = Integer.parseInt(tf1.getText());
-                // Check if the number is even or odd
+                
                 if (num % 2 == 0) {
                     tf2.setText("Even number");
                 } else {
-                    tf2.setText("Odd number"); // Add semicolon here
+                    tf2.setText("Odd number"); 
                 }
             } catch (NumberFormatException ex) {
                 // Handle non-integer input
@@ -56,7 +56,7 @@ public class Test extends JFrame implements ActionListener {
         }
     }
 
-    // Main method to create an instance of Test
+    
     public static void main(String[] args) {
         new Test(); // Create an instance of Test
     }
