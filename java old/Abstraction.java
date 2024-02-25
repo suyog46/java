@@ -13,8 +13,7 @@ class Triangle extends shape{
     public void area(){
         super.display();
         System.out.println("area of triangle "+(0.5*breadth*length));//area method chai value matra nalina vayera
-        //implement garna pani use garnu parxa
-        
+        //implement garna pani use garnu parxa 
     }
 
 }
